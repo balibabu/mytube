@@ -4,8 +4,8 @@ export default function VidCard({ item }) {
     const [status, setStatus] = useState(false);
 
     return (
-        <div className='bg-white border border-black '>
-            <div className='bg-green-300 px-2'>{item.title}</div>
+        <div className='bg-white border-2 border-black m-1 rounded overflow-clip'>
+            <div className='bg-green-300 px-2 font-bold'>{item.title}</div>
             <div className='overflow-hidden'>
                 {
                     status ?
