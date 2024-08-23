@@ -8,8 +8,6 @@ export default function App() {
     useEffect(() => {
         getLinks(setItems);
     }, [])
-console.log(items);
-
 
     return (
         <div className='w-full sm:w-1/3 mx-auto border-x-2 border-gray-500'>
