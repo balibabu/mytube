@@ -8,7 +8,7 @@ export async function getLinks(setItems = () => { }) {
 
     items.forEach(item => {
         const values = item.split('\n');
-        vlist.push({ title: values[0], video: values[1], thumbnail: values[2] });
+        vlist.push({ title: values[0], thumbnail: values[1], video: values.slice(2) });
     });
 
 

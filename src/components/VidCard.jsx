@@ -9,8 +9,8 @@ export default function VidCard({ item }) {
             <div className='overflow-hidden'>
                 {
                     status ?
-                        <video controls className='w-full'>
-                            <source src={item.video} type="video/mp4" />
+                        <video controls className='w-full' poster={item.thumbnail}>
+                            {item.video.map((v, i) => <source key={i} src={v} type="video/mp4" label={`quality-A${i + 1}`} />)}
                             Your browser does not support the video tag.
                         </video>
                         :

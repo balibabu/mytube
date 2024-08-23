@@ -8,6 +8,7 @@ export default function App() {
     useEffect(() => {
         getLinks(setItems);
     }, [])
+console.log(items);
 
 
     return (
