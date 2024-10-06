@@ -11,12 +11,5 @@ export async function getLinks(setItems = () => { }) {
         vlist.push({ title: values[0], thumbnail: values[1], video: values.slice(2) });
     });
 
-
-    // const vlist = [
-    //     { title: 'Video name 1', video: 'https://raw.githubusercontent.com/balibabu/mtube/main/vid1.mp4', thumbnail: 'https://raw.githubusercontent.com/balibabu/mtube/main/spider.png' },
-    //     { title: 'Video name 1', video: 'https://raw.githubusercontent.com/balibabu/mtube/main/vid2.mp4', thumbnail: 'https://raw.githubusercontent.com/balibabu/mtube/main/spider.png' },
-    //     { title: 'Video name 1', video: 'https://raw.githubusercontent.com/balibabu/mtube/main/vid3.mp4', thumbnail: 'https://raw.githubusercontent.com/balibabu/mtube/main/spider.png' },
-    // ]
     setItems(vlist);
-    // return vlist;
 }
